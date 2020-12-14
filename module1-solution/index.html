@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="myFirstApp">
+<html ng-app="LunchCheck">
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <title>Hello Coursera</title>
+    <title>Module-1 Assignment : Bhargav Sarvaria</title>
   </head>
   <body>
-    <div ng-controller="MyFirstController">
-        {{name}}
+    <div ng-controller="LunchCheckController">
+        <input type="text" ng-model="inputText" hint="Items you  usually eat for lunch">
+        <br>
+        <button type="button" ng-click="generate()">Check If Too Much</button>
+        <br>
+        <p>{{message}}</p>
     </div>
   </body>
 </html>
